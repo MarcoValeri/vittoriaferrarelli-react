@@ -1,0 +1,21 @@
+@import '../../assets/scss/abstract/variables';
+
+.nav {
+    border: 1px solid $red;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem 1rem;
+        border: 1px solid #00d;
+    }
+
+    &__container-logo {
+        border: 1px solid #d00;
+    }
+
+    &__container-menu {
+        border: 1px solid #d00;
+    }
+}
