@@ -7,11 +7,14 @@ const Nav = () => {
         <nav className='nav'>
             <div className="nav__wrapper">
                 <div className="nav__container-logo">
-                    <h2><Link className="link-no-style" to="/">Vittoria Ferrarelli</Link></h2>
+                    <h2><Link className="nav__logo link-no-style h1" to="/">Vittoria Ferrarelli</Link></h2>
                 </div>
                 <div className="nav__container-menu">
-                    <ul>
-                        <li><Link to="/">Home</Link></li>
+                    <ul className="list-menu">
+                        <li className="nav__menu-item"><Link className="body-md link-no-style" to="/">Home</Link></li>
+                        <li className="nav__menu-item"><Link className="body-md link-no-style" to="/chi-sono">Chi Sono</Link></li>
+                        <li className="nav__menu-item"><Link className="body-md link-no-style" to="/opere">Opere</Link></li>
+                        <li className="nav__menu-item"><Link className="body-md link-no-style" to="/contatti">Contatti</Link></li>
                     </ul>
                 </div>
             </div>
