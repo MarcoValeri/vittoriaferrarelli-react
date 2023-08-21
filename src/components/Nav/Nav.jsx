@@ -12,7 +12,7 @@ const Nav = () => {
                 <span className="nav__span"></span>
                 <span className="nav__span"></span>
                 <ul className="nav__menu list-menu">
-                    <li className="nav__container-logo"><h2><Link className="nav__logo link-no-style h1" to="/">Vittoria Ferrarelli</Link></h2></li>
+                    <li className="nav__container-logo"><h2><Link className="nav__logo link-no-style h1 logo-font" to="/">Vittoria Ferrarelli</Link></h2></li>
                     <li className="nav__menu-item"><Link className="body-md link-no-style" to="/">Home</Link></li>
                     <li className="nav__menu-item"><Link className="body-md link-no-style" to="/chi-sono">Chi Sono</Link></li>
                     <li className="nav__menu-item"><Link className="body-md link-no-style" to="/opere">Opere</Link></li>

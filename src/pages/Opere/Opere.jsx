@@ -1,3 +1,4 @@
+import Footer from '../../components/Footer/Footer';
 import Nav from '../../components/Nav/Nav';
 import Opera from '../../components/Opera/Opera';
 
@@ -14,7 +15,7 @@ const Opere = () => {
             <Nav />
             <div className="opere">
                 <div className="opere__container-title">
-                    <h2 className="h2">Le opere di Vittoria Ferrarelli</h2>
+                    <h2 className="h2">Le opere di <span className="logo-font">Vittoria Ferrarelli</span></h2>
                 </div>
                 <div className="opere__container-opere">
                     {
@@ -31,6 +32,7 @@ const Opere = () => {
                         })
                     }
                 </div>
+                <Footer />
             </div>
         </div>
     )

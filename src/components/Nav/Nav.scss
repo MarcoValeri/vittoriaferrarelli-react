@@ -4,7 +4,7 @@
 .nav {
     text-align: center;
     padding: 2rem;
-    border: 1px solid $red;
+    border-bottom: 1px solid $red;
 
     &__toggle {
         @include respond(md) {
@@ -90,9 +90,9 @@
         margin-bottom: 2rem;
     }
 
-    &__logo {
-        font-family: 'Dancing Script', cursive;
-    }
+    // &__logo {
+    //     font-family: 'Dancing Script', cursive;
+    // }
 
     &__menu-item {
         display: inline-block;
