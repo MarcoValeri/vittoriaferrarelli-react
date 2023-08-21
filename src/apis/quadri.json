@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "title": "Opera 1",
+        "imageUrl": "https://viaggin.com/images/app-per-viaggiare.webp",
+        "imageAlt": "Opera 1",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry"
+    },
+    {
+        "id": 2,
+        "title": "Opera 2",
+        "imageUrl": "https://viaggin.com/images/app-per-viaggiare.webp",
+        "imageAlt": "Opera 2",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry"
+    },
+    {
+        "id": 3,
+        "title": "Opera 3",
+        "imageUrl": "https://viaggin.com/images/app-per-viaggiare.webp",
+        "imageAlt": "Opera 3",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry"
+    },
+    {
+        "id": 4,
+        "title": "Opera 4",
+        "imageUrl": "https://viaggin.com/images/app-per-viaggiare.webp",
+        "imageAlt": "Opera 4",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry"
+    }
+]

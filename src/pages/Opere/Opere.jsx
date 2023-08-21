@@ -1,9 +1,14 @@
 import Nav from '../../components/Nav/Nav';
 import Opera from '../../components/Opera/Opera';
 
+import getAllOpera from '../../apis/quadri.json';
+
 import './Opere.scss';
 
 const Opere = () => {
+
+    // console.log(getAllOpera.quadri[0].title)
+
     return (
         <div>
             <Nav />
@@ -12,43 +17,19 @@ const Opere = () => {
                     <h2 className="h2">Le opere di Vittoria Ferrarelli</h2>
                 </div>
                 <div className="opere__container-opere">
-                    <Opera
-                        title="Opera 1"
-                        imageUrl="https://viaggin.com/images/app-per-viaggiare.webp"
-                        alt="Image alt title"
-                        description="Lorem Ipsum is simply dummy text of the printing and typesetting industry"
-                    />
-                    <Opera
-                        title="Opera 1"
-                        imageUrl="https://viaggin.com/images/app-per-viaggiare.webp"
-                        alt="Image alt title"
-                        description="Lorem Ipsum is simply dummy text of the printing and typesetting industry"
-                    />
-                    <Opera
-                        title="Opera 1"
-                        imageUrl="https://viaggin.com/images/app-per-viaggiare.webp"
-                        alt="Image alt title"
-                        description="Lorem Ipsum is simply dummy text of the printing and typesetting industry"
-                    />
-                    <Opera
-                        title="Opera 1"
-                        imageUrl="https://viaggin.com/images/app-per-viaggiare.webp"
-                        alt="Image alt title"
-                        description="Lorem Ipsum is simply dummy text of the printing and typesetting industry"
-                    />
-                    <Opera
-                        title="Opera 1"
-                        imageUrl="https://viaggin.com/images/app-per-viaggiare.webp"
-                        alt="Image alt title"
-                        description="Lorem Ipsum is simply dummy text of the printing and typesetting industry"
-                    />
-                    <Opera
-                        title="Opera 1"
-                        imageUrl="https://viaggin.com/images/app-per-viaggiare.webp"
-                        alt="Image alt title"
-                        description="Lorem Ipsum is simply dummy text of the printing and typesetting industry"
-                    />
-
+                    {
+                        getAllOpera.map(item => {
+                            return (
+                                <Opera
+                                    key={item.id}
+                                    title={item.title}
+                                    imageUrl={item.imageUrl}
+                                    imageAlt={item.imageAlt}
+                                    description={item.description}
+                                />
+                            )
+                        })
+                    }
                 </div>
             </div>
         </div>
