@@ -8,8 +8,6 @@ import './Opere.scss';
 
 const Opere = () => {
 
-    // console.log(getAllOpera.quadri[0].title)
-
     return (
         <div>
             <Nav />

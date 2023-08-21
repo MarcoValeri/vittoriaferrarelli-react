@@ -1,0 +1,9 @@
+@import '../../assets/scss/abstract/variables';
+
+.button-link {
+    font-size: 2rem;
+    background-color: $red;
+    color: $white;
+    padding: 1rem;
+    border-radius: 5px;
+}
