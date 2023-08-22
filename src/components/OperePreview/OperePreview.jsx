@@ -20,6 +20,7 @@ const OperePreview = () => {
                             return (
                                 <Opera
                                     key={item.id}
+                                    url={item.url}
                                     title={item.title}
                                     imageUrl={item.imageUrl}
                                     imageAlt={item.imageAlt}

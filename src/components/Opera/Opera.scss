@@ -8,8 +8,16 @@
     border: 1px solid $black;
     border-radius: 5px;
 
+    &:hover {
+        border: 1px solid $red;
+    }
+
     @include respond(md) {
         width: 100%;
+    }
+
+    &:hover &__image {
+        transform: scale(1.2);
     }
 
     &__wrapper {
@@ -27,10 +35,13 @@
 
     &__container-image {
         width: 100%;
+        overflow: hidden;
         margin-bottom: 1rem;
     }
 
     &__image {
         width: 100%;
+        transition: all 1s;
     }
+
 }

@@ -1,6 +1,7 @@
 [
     {
         "id": 1,
+        "url": "quadro-uno",
         "title": "Opera 1",
         "imageUrl": "https://viaggin.com/images/app-per-viaggiare.webp",
         "imageAlt": "Opera 1",
@@ -8,6 +9,7 @@
     },
     {
         "id": 2,
+        "url": "quadro-due",
         "title": "Opera 2",
         "imageUrl": "https://viaggin.com/images/app-per-viaggiare.webp",
         "imageAlt": "Opera 2",
@@ -15,6 +17,7 @@
     },
     {
         "id": 3,
+        "url": "quadro-tre",
         "title": "Opera 3",
         "imageUrl": "https://viaggin.com/images/app-per-viaggiare.webp",
         "imageAlt": "Opera 3",
@@ -22,6 +25,7 @@
     },
     {
         "id": 4,
+        "url": "quadro-quattro",
         "title": "Opera 4",
         "imageUrl": "https://viaggin.com/images/app-per-viaggiare.webp",
         "imageAlt": "Opera 4",
