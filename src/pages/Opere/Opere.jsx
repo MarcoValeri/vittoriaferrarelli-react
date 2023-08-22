@@ -1,5 +1,3 @@
-import { Route, Routes } from 'react-router-dom';
-
 import Footer from '../../components/Footer/Footer';
 import Nav from '../../components/Nav/Nav';
 import Opera from '../../components/Opera/Opera';
