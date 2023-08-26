@@ -1,7 +1,7 @@
 runtime: nodejs18
 handlers:
   - url: /(.*\..+)$
-    redirect: /.*
+    url_rewrite: ^/(.*\..+)$ /.*
   - url: /.*
     static_files: dist/index.html
     mime_type: text/html
