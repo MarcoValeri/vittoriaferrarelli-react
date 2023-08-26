@@ -1,9 +1,8 @@
 runtime: nodejs18
 handlers:
-    - url: /(.*\..+)$
-        static_files: dist/\1
-        upload: dist/\1
-        mime_type: application/octet-stream
-    - url: /.*
-        static_files: dist/index.html
-        mime_type: text/html
+  - url: /(.*\..+)$
+    static_files_match: dist/\1
+    mime_type: application/octet-stream
+  - url: /.*
+    static_files: dist/index.html
+    mime_type: text/html
