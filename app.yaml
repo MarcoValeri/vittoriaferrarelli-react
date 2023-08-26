@@ -3,6 +3,7 @@ handlers:
   - url: /(.*\..+)$
     static_files: dist/\1
     mime_type: application/octet-stream
+    upload: dist/\1
   - url: /.*
     static_files: dist/index.html
     mime_type: text/html
