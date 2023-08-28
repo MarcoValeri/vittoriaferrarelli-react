@@ -8,7 +8,8 @@ const Home = () => {
     return (
         <div>
             <Nav />
-            <OperePreview />
+            <h1>Removed OPere Preview for testing purpose</h1>
+            {/* <OperePreview /> */}
             <Footer />
         </div>
     )
