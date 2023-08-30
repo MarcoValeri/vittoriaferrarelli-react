@@ -1,12 +1,32 @@
-import getAllOpera from '../../apis/quadri.json';
+import { useEffect, useState } from 'react';
 
 import ButtonLink from '../ButtonLink/ButtonLink';
 import Opera from '../Opera/Opera';
 
+// Firebase
+import { db } from '../../firebase';
+import { onValue, ref } from '@firebase/database';
 
 import './OperePreview.scss';
 
 const OperePreview = () => {
+
+    // State
+    const [quadri, setQuadri] = useState([]);
+
+    // Effect
+    useEffect(() => {
+        const query = ref(db, "Quadri");
+        return onValue(query, (snapshot) => {
+            const data = snapshot.val();
+
+            if (snapshot.exists()) {
+                Object.values(data).map((quadro) => {
+                    setQuadri((quadri) => [...quadri, quadro]);
+                });
+            }
+        });
+    }, []);
 
     return (
         <div className="opere-preview">
@@ -15,11 +35,11 @@ const OperePreview = () => {
             </div>
             <div className="opere-preview__container-preview">
                 {
-                    getAllOpera.map((item, index) => {
+                    quadri.map((item, index) => {
                         if (index < 3) {
                             return (
                                 <Opera
-                                    key={item.id}
+                                    key={index}
                                     url={item.url}
                                     title={item.title}
                                     imageUrl={item.imageUrl}

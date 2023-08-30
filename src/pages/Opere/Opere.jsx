@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react';
 
-// Firebase
-import { db } from '../../firebase';
-import { onValue, ref } from 'firebase/database';
-
 import Footer from '../../components/Footer/Footer';
 import Nav from '../../components/Nav/Nav';
 import Opera from '../../components/Opera/Opera';
+
+// Firebase
+import { db } from '../../firebase';
+import { onValue, ref } from 'firebase/database';
 
 import './Opere.scss';
 
