@@ -1,12 +1,33 @@
+import { useEffect, useState } from 'react';
+
+// Firebase
+import { db } from '../../firebase';
+import { onValue, ref } from 'firebase/database';
+
 import Footer from '../../components/Footer/Footer';
 import Nav from '../../components/Nav/Nav';
 import Opera from '../../components/Opera/Opera';
 
-import getAllOpera from '../../apis/quadri.json';
-
 import './Opere.scss';
 
 const Opere = () => {
+
+    // State
+    const [quadri, setQuadri] = useState([]);
+
+    // useEffect
+    useEffect(() => {
+        const query = ref(db, "Quadri");
+        return onValue(query, (snapshot) => {
+            const data = snapshot.val();
+
+            if (snapshot.exists()) {
+                Object.values(data).map((quadro) => {
+                    setQuadri((quadri) => [...quadri, quadro]);
+                });
+            }
+        });
+    }, []);
 
     return (
         <div>
@@ -17,10 +38,10 @@ const Opere = () => {
                 </div>
                 <div className="opere__container-opere">
                     {
-                        getAllOpera.map(item => {
+                        quadri.map((item, index) => {
                             return (
                                 <Opera
-                                    key={item.id}
+                                    key={index}
                                     url={item.url}
                                     title={item.title}
                                     imageUrl={item.imageUrl}
